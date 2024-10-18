@@ -10,7 +10,10 @@
 //  Компилятор будет обрабатывать не только TS файлы но и JS
     "allowJs": true,
     "moduleResolution": "node",
-// esModuleInterop позволяет работать с пакетами которые использует
+    "noEmit": false,
+    // ОТносительный путь
+//    "baseUrl": ".",
+    // esModuleInterop позволяет работать с пакетами которые использует
 // common js как с обычными пакетами с помощью import require module.export
     "esModuleInterop": true,
 // Позволяет использовать ипорт функций или других элементов которые экспортируются

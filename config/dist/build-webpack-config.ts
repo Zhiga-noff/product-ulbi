@@ -10,9 +10,9 @@ export const buildWebpackConfig = (option: BuildOptions): webpack.Configuration 
         mode: mode,
         entry: paths.entry,
         output: {
-            filename: '[main].[contenthash].js',
+            filename: '[name].[contenthash].js',
             path: paths.build,
-            clean: true
+            clean: true,
         },
         module: {
             rules: buildLoaders(option)

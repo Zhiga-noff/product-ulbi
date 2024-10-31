@@ -1,23 +1,27 @@
-import React, {Suspense} from 'react';
-import './styles/index.scss'
-import {Link, Route, Routes} from "react-router-dom";
-import {MainPageLazy} from "./pages/main-page/MainPage.lazy";
-import {AboutPageLazy} from "./pages/about-page/AboutPage.lazy";
+import React, { Suspense, useContext } from 'react';
+import './styles/index.scss';
+import { Link, Route, Routes } from 'react-router-dom';
+import { MainPageLazy } from './pages/main-page/MainPage.lazy';
+import { AboutPageLazy } from './pages/about-page/AboutPage.lazy';
+import { Theme, ThemeContext } from './theme/ThemeContext';
+import { useTheme } from './theme/use-theme';
 
 export const App = () => {
-    return (
-        <div className='app light'>
-            <Link to={'/'}>Главная</Link>
-            <Link to={'/about'}>О сайте</Link>
+  const { theme, toggleTheme } = useTheme();
 
-            <Suspense fallback={<div>Loading...</div>}>
-                <h2>Preview</h2>
-                <Routes>
-                    <Route path={'/'} element={<MainPageLazy/>}/>
-                    <Route path={'/about'} element={<AboutPageLazy/>}/>
-                </Routes>
-            </Suspense>
+  return (
+    <div className={`app ${theme}`}>
+      <button onClick={toggleTheme}>TOGGLE</button>
+      <Link to={'/'}>Главная</Link>
+      <Link to={'/about'}>О сайте</Link>
 
-        </div>
-    );
+      <Suspense fallback={<div>Loading...</div>}>
+        <h2>Preview</h2>
+        <Routes>
+          <Route path={'/'} element={<MainPageLazy />} />
+          <Route path={'/about'} element={<AboutPageLazy />} />
+        </Routes>
+      </Suspense>
+    </div>
+  );
 };

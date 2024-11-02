@@ -5,3 +5,4 @@ node_modules
 /.idea/workspace.xml
 /dist/
 /.idea/prettier.xml
+/.idea/codeStyles/codeStyleConfig.xml

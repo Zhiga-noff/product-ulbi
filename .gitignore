@@ -6,3 +6,4 @@ node_modules
 /dist/
 /.idea/prettier.xml
 /.idea/codeStyles/codeStyleConfig.xml
+/.idea/watcherTasks.xml

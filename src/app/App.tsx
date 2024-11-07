@@ -5,6 +5,7 @@ import {classNames} from 'shared/lib/class-names/class-names';
 import {useTheme} from 'app/providers/theme-provider';
 import {AppRuter} from 'app/providers/router';
 import {Navbar} from 'widgets/navbar';
+import {Sidebar} from "widgets/sidebar";
 
 
 const App = () => {
@@ -14,8 +15,10 @@ const App = () => {
 
     return (<div className={classNames('app', {}, [theme])}>
         <Navbar/>
-        <AppRuter/>
-
+        <div className={'content-page'}>
+            <Sidebar/>
+            <AppRuter/>
+        </div>
     </div>);
 };
 

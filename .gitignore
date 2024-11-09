@@ -11,3 +11,4 @@ node_modules
 /build/
 /.idea/jsLinters/eslint.xml
 /.idea/inspectionProfiles/Project_Default.xml
+/.idea/stylesheetLinters/stylelint.xml

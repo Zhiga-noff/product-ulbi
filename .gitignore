@@ -9,3 +9,5 @@ node_modules
 /.idea/watcherTasks.xml
 /.idea/codeStyles/Project.xml
 /build/
+/.idea/jsLinters/eslint.xml
+/.idea/inspectionProfiles/Project_Default.xml

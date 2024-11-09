@@ -1,1 +1,1 @@
-export * from './ui/AppRuter'
+export * from './ui/AppRuter';

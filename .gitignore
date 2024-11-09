@@ -8,3 +8,4 @@ node_modules
 /.idea/codeStyles/codeStyleConfig.xml
 /.idea/watcherTasks.xml
 /.idea/codeStyles/Project.xml
+/build/

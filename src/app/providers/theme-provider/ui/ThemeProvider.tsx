@@ -15,5 +15,9 @@ export const ThemeProvider: FC<IThemeProvider> = ({ children }) => {
         setTheme,
     }), [theme]);
 
-    return <ThemeContext.Provider value={defaultProps}>{children}</ThemeContext.Provider>;
+    return (
+        <ThemeContext.Provider value={defaultProps}>
+            {children}
+        </ThemeContext.Provider>
+    );
 };

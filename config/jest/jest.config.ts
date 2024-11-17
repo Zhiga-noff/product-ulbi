@@ -3,7 +3,7 @@
  * https://jestjs.io/docs/configuration
  */
 
-import path from "path";
+import path from 'path';
 
 export default {
     // All imported modules in your tests should be mocked automatically
@@ -33,7 +33,7 @@ export default {
         'node_modules',
     ],
     modulePaths: [
-        '<rootDir>src'
+        '<rootDir>src',
     ],
     testMatch: [
         // Обнаружил разницу между МАК ОС и ВИНДОУС!!!
@@ -44,7 +44,7 @@ export default {
 
     moduleNameMapper: {
         '\\.s?css$': 'identity-obj-proxy',
-        '\\.svg': path.resolve(__dirname, 'JestEmptyComponent.tsx')
+        '\\.svg': path.resolve(__dirname, 'JestEmptyComponent.tsx'),
     },
 
     // Indicates whether the coverage information should be collected while executing the test

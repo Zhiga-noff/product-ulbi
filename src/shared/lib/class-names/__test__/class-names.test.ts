@@ -1,4 +1,4 @@
-import {classNames} from "shared/lib/class-names/class-names";
+import { classNames } from 'shared/lib/class-names/class-names';
 
 describe('Функция classNames', () => {
     test('С одним параметром', () => {
@@ -15,7 +15,7 @@ describe('Функция classNames', () => {
         const expected = 'someClass class1 class2 hovered scrollable';
         expect(classNames(
             'someClass',
-            {hovered: true, scrollable: true},
+            { hovered: true, scrollable: true },
             ['class1', 'class2'],
         ))
             .toBe(expected);
@@ -25,7 +25,7 @@ describe('Функция classNames', () => {
         const expected = 'someClass class1 class2 hovered';
         expect(classNames(
             'someClass',
-            {hovered: true, scrollable: false},
+            { hovered: true, scrollable: false },
             ['class1', 'class2'],
         ))
             .toBe(expected);
@@ -35,7 +35,7 @@ describe('Функция classNames', () => {
         const expected = 'someClass class1 class2 hovered';
         expect(classNames(
             'someClass',
-            {hovered: true, scrollable: undefined},
+            { hovered: true, scrollable: undefined },
             ['class1', 'class2'],
         ))
             .toBe(expected);

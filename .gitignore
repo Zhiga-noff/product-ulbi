@@ -15,3 +15,6 @@ node_modules
 /.idea/shelf/Uncommitted_changes_before_Update_at_13_11_2024_15_57_[Changes]/shelved.patch
 /.idea/shelf/Uncommitted_changes_before_Update_at_13_11_2024_15_57__Changes_.xml
 /.idea/dictionaries/Daria.xml
+/.idea/material_theme_project_new.xml
+
+*storybook.log
